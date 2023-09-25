@@ -1,9 +1,11 @@
-# AIMS League Webssite
+# AIMS League Website
 
 To Get Started
 1. Clone this repo
 2. Open in your code editor of course and install all the dependencies with:
-```npm install```
+`npm install`
+4. Run `npm run dev` to spin up a server
+5. By default, Astro uses port `4321`, so navigate to `https://localhost:4321` to see your changes occur in real-time
 3. Have fun!
 
 ## Resources
@@ -12,7 +14,9 @@ I want this to be a living curation of resources for us to build and maintain th
 - [React Docs](https://react.dev/)
 - [Tailwind CSS Docs](https://tailwindcss.com/)
 - [Storyblok Docs](https://www.storyblok.com/docs/guide/introduction)
+  - Not yet implemented
 - [Storyblok + Astro Docs](https://www.storyblok.com/tc/astro)
+  - Not yet implemented
 
 ### Base repo README is below for your reference.
 ---
