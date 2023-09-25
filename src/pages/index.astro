@@ -1,0 +1,59 @@
+---
+import "../styles/global.css"
+
+const pageTitle = 'AIMS League'
+const pageDescription = 'AIMS is an intercontinental motorsport league in Gran Turismo 7.'
+---
+
+<html lang="en">
+	<head>
+		<!-- pageTitle is referecned above in Astro's "Frontmatter" -->
+		<title>{pageTitle}</title>
+
+		<!-- Basic Meta Tags for SEO and such -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={pageDescription} />
+    <!-- <meta property="og:image" content="" />
+    <meta property="og:url" content="" /> -->
+		<meta property="og:site_name" content="AIMS League" />
+    <!-- <meta name="twitter:card" content="" /> -->
+    <meta name="twitter:image:alt" content="" />
+
+		<!-- DO NOT REMOVE THIS LINE. NECESSARY FOR ASTRO -->
+		<meta name="generator" content={Astro.generator} />
+
+		<!-- Favicon -->
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+		<!-- Fontawesome Icons Script -->
+		<script
+      is:inline
+      src="https://kit.fontawesome.com/dec2579292.js"
+      crossorigin="anonymous"></script>
+		
+	</head>
+	<body class='py-12 px-4 place-items-center'>
+		<header>
+			<div id='title-container' class="flex gap-2 place-items-center">
+				<i class="fa-solid fa-flag-checkered text-4xl text-red-600 dark:text-red-400 md:text-5xl"></i>
+				<h1>{pageTitle}</h1>
+				<i class="fa-solid fa-flag-checkered text-4xl text-red-600 dark:text-red-400 md:text-5xl"></i>
+			</div>
+	</header>
+	<main id="main">
+		<section>
+			<article>
+				<h1>Heading 1</h1>
+				<h2>Heading 2</h2>
+				<h3>Heading 3</h3>
+				<h4>Heading 4</h4>
+				<h5>Heading 5</h5>
+				<h6>Heading 6</h6>
+			</article>
+		</section>
+	</main>
+	</body>
+</html>
