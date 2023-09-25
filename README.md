@@ -3,8 +3,12 @@
 To Get Started
 1. Clone this repo
 2. Open in your code editor of course and install all the dependencies with:
-```npm install```
-3. Have fun!
+`npm install`
+3. Spin up a dev server with `npm run dev`
+4. Go to `localhost:4321`
+5. Have fun!
+
+> *Don't forget you can stop the server by going to your terminal and pressting control+c. Then start it up again with `npm run dev`.*
 
 ## Resources
 I want this to be a living curation of resources for us to build and maintain the site.
