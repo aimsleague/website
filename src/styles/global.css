@@ -82,7 +82,11 @@ section {
 } */
 
 button {
-  @apply sm:w-full md:w-32 text-center px-8 py-2 border-2 font-bold cursor-pointer;
+  @apply sm:w-full md:w-40 text-center px-8 py-4 border-2 font-bold cursor-pointer text-lg;
+}
+
+button > a {
+  @apply block;
 }
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
