@@ -6,7 +6,7 @@ body {
   /* Layout */
   /* Ensures the footer stays at bottom no matter how much content is on the page. */
   /* display: grid; */
-  @apply min-h-screen grid;
+  @apply min-h-screen grid mx-auto px-4 pb-12;
   grid-template-rows: auto 1fr auto;
   
   /* Text and Font */
@@ -53,29 +53,21 @@ h6 {
 /* Semantic HTML Styles */
 
 header {
-  @apply container min-h-[80vh];
+  @apply container mx-auto min-h-[80vh];
 }
 
-header > #header-hero {
-  /* @apply flex; */
-}
-
-#header-hero > #header-title {
-  @apply flex;
-}
-
-#header-hero > #header-title > i {
+#header-title-container > #header-title > i {
   @apply text-4xl text-red-600 dark:text-red-400 md:text-5xl;
 }
 
 /* Constrains elements inside the main element to a certain width (container class), centers them, and adds padding to the top and bottom of the main element. */
 main {
-  @apply container space-y-8;
+  @apply container mx-auto space-y-8;
 }
 
 /* Centers element on the page. Adds "flow" to elements nested inside the section element using the space-y-[] rule. Also adds horizontal padding so elements are not butting up on the extreme edges of the window on smaller screen sizes. */
 section {
-  @apply space-y-8;
+  @apply mx-auto space-y-8;
 }
 
 /* Centers element on the page. Adds "flow" to elements nested inside the section element using the space-y-[] rule. */
@@ -90,7 +82,7 @@ section {
 } */
 
 button {
-  @apply w-32 px-2 py-4 border-2 border-[inherit] font-bold cursor-pointer;
+  @apply sm:w-full md:w-32 text-center px-8 py-2 border-2 font-bold cursor-pointer;
 }
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */

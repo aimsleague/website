@@ -2,9 +2,10 @@
 import "../styles/global.css"
 import HeaderNav from "../layouts/HeaderNav.astro";
 import HeaderTitle from "../layouts/HeaderTitle.astro";
+import SocialBtnContainer from "../layouts/SocialBtnContainer.astro"
 
 const pageTitle = 'AIMS League'
-const pageDescription = 'AIMS is an intercontinental motorsport league in Gran Turismo 7.'
+const pageDescription = 'AIMS is an intercontinental motorsport league in Gran Turismo 7'
 ---
 
 <html lang="en">
@@ -40,10 +41,9 @@ const pageDescription = 'AIMS is an intercontinental motorsport league in Gran T
 	<body>
 		<header>
 			<HeaderNav />
-			<div id='header-hero'>
-				<HeaderTitle />
-				<button class='bg-[#ea3323] text-white'><a href="https://www.youtube.com/@AIMSLeague" target="_blank" rel="noopener noreferrer">YouTube</a></button>
-				<button class='bg-[#874bf6] text-white'><a href="https://www.twitch.tv/aimsleague" target="_blank" rel="noopener noreferrer">Twitch</a></button>
+			<div id='header-hero' class='flex flex-col h-full justify-center'>
+				<HeaderTitle pageTitle = {pageTitle} pageDescription={pageDescription}/>
+				<SocialBtnContainer />
 			</div>
 	</header>
 	<main id="main">
