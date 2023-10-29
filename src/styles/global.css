@@ -82,7 +82,7 @@ section {
 } */
 
 button {
-  @apply sm:w-full md:w-40 text-center px-8 py-4 border-2 font-bold cursor-pointer text-lg;
+  @apply sm:w-full md:w-40 text-center px-8 py-4 border-2 font-bold text-lg;
 }
 
 button > a {
